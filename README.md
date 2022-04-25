@@ -9,8 +9,14 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip3 install -r requirements.txt
 
-streamlit
+streamlit run app.py
 ```
+
+## Demo Usage
+
+| ![image](assets/demo.gif) |
+|:--:|
+| <b>Video with bounding boxes</b>|
 
 ## Assets
 
