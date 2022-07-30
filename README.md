@@ -2,6 +2,8 @@
 
 This is a demo repo to demonstrate nilvana vision inference runtime with streamlit.
 
+Please refer to the medium [article](https://medium.com/hello-nilvana/%E9%80%8F%E9%81%8E-streamlit-%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%AB%8B%E7%89%A9%E9%AB%94%E5%81%B5%E6%B8%AC-web-app-b2b156d2f862). 👈👈👈👈👈👈
+
 ## Get Started
 
 ```python

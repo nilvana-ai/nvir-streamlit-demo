@@ -1,5 +1,5 @@
-import cv2
 import streamlit as st
+import cv2
 from PIL import Image
 import requests
 import json
@@ -47,7 +47,7 @@ if uploaded_video is not None: # run only when user uploads video
             result = response.json()
 
             # draw the prediction on the frame
-            for obj in result['result']:
+            for obj in result:
                 cv2.rectangle(frame, (int(obj['xmin']), int(obj['ymin'])), (int(obj['xmin']+obj['width']), int(obj['ymin']+obj['height'])), get_color(obj['label']), 2)
                 label = "{}: {:.2f}%".format(obj['label'], obj['confidence'] * 100)
                 frame = cv2.putText(frame, label, (int(obj['xmin']), int(obj['ymin']-10)), cv2.FONT_HERSHEY_SIMPLEX, 0.9, get_color(obj['label']), 2)
